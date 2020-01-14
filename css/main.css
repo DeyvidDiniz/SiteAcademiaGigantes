@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap');
+@import url(global.css);
+
+.drk:after{
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:#000;
+  content:"";
+  opacity:0.5;
+}
+
+.carousel-inner .carousel-item > img{
+  -webkit-animation: thing 20s;
+  -o-animation: thing 20s; 
+  animation: thing 20s;
+}
+
+@keyframes thing{
+  from{
+    transform: scale(1, 1);
+  }
+  to{
+    transform: scale(1.5, 1.5);
+  }
+
+}
+
+
+
+body{
+    font-family: Century Gothic;
+    font-size: 16pt;
+    font-weight: bolder;
+
+}
+a:hover{
+  color:#fd7b1b;
+}
+a{
+    color:white;
+}
+
+h1{
+ font-weight: bold;
+ text-transform: uppercase;
+ font-family: Century Gothic;
+ margin-bottom: 20px;
+ font-size:28px;
+}
+
+p{
+  font-size:20px;
+}
+
+#borda{
+  height:2.5px;
+  width: 85%;
+  border-radius: 5px;
+  background: linear-gradient(to left,#fd7b1b,rgb(75, 75, 75) );
+
+}
+#div-borda{
+  margin-top:65px;
+  margin-bottom: 50px;
+}
+
+#text-img{
+  position:relative;
+  background-color: rgba(255, 255, 255,0.6);
+  bottom: 38px;
+  color:#fd7b1b;
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0,0.8);
+}
+
+#boas-vindas p{
+  color:gray;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0,0.8);
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+
+.slider {
+  width: auto;
+  margin: 30px 50px 50px;
+ }
+ 
+ .slick-slide {
+  color: white;
+  padding: 20px 0;
+  font-size: 30px;
+  font-family: "Arial", "Helvetica";
+  text-align: center;
+ }
+ .slick-slide img {
+  display: inline-block;
+ }
+ 
+ .slick-prev:before,
+ .slick-next:before {
+  color: black;
+ }
+ 
+ .slick-dots li {
+  width: auto;
+ }
+ 
+ .pager__item {
+  padding: 0 12px;
+  display: block;
+  font-size: 30px;
+ }
+
+ .pager__item:hover{
+    font-size:33px;
+ }
+ 
+ .slick-dots {
+  bottom: -40px;
+ }
+ 
+
+.arredondar{
+  border-radius: 10px;
+}
+
+
+/*ANIMAÇÃO*/
+
+
+
+.night{
+  border: 1px solid black;
+  margin :1rem auto;
+  background: url(../imagem/animacao/sunset.jpg);
+  background-size:cover ;
+  position: relative;
+  box-shadow: 1px 2px 60px rgba(0,0,0,0.4);
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+
+}
+
+.surface{
+  height: 200px;
+  width:1000%;
+  background:url(../imagem/animacao/Img_02.png);
+  display:block;
+  position: absolute;
+  bottom: 0%;
+  left:0%;
+  background-repeat:repeat-x;
+  animation:moveRight 6s linear infinite;
+}
+.car{
+  position: absolute;
+  bottom:15%;
+  left: 20%;
+  animation:suspensao 1s linear infinite;
+}
+
+#animacao{
+  max-width: 400px;
+  max-height: 400px;
+}
+
+
+@keyframes moveRight{
+  100%{
+      transform: translateX(-2150px);
+  }
+}
+
+@keyframes suspensao{
+  100%{
+      transform: translateY(-1px);
+  }
+  50%{
+      transform: translateY(-2px);
+  }
+  0%{
+      transform: translateY(-1px);
+  }
+}
+
+/*FIM ANIMAÇÃO*/
+
+/*ANIMAÇÃO 2 */
+
+.plane{
+  height:200px;
+  width:1000%;
+  position: absolute;
+  left:100%;
+  bottom:50%;
+  animation:movePlane 8s linear infinite;
+}
+.night2{
+  border: 1px solid black;
+  margin :1rem auto;
+  background: url(../imagem/animacao/alimentacao/grass.jpg);
+  background-size:cover ;
+  position: relative;
+  box-shadow: 1px 2px 60px rgba(0,0,0,0.4);
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+
+}
+
+.surface2{
+  height: 250px;
+  width:1000%;
+  background:url(../imagem/animacao/alimentacao/background3.png);
+  display:block;
+  position: absolute;
+  bottom: 0%;
+  left:-23%;
+  background-repeat:repeat-x;
+}
+
+.dog{
+  position: absolute;
+  bottom:5%;
+  left: 25%;
+  animation:suspensao 1s linear infinite;
+}
+
+@keyframes movePlane{
+  100%{
+      transform: translateX(-550px);
+  }
+}
+
+/*FIM ANIMAÇÃO 2*/
+
+#btn-saiba-mais{
+  text-align: center;
+  margin-top: 15px;
+}
+
+
+
+
+
+/*Trocar colunas de posição ao quebrar*/
+@media (max-width: 990px) {
+  .row.reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+/*FIM*/
+
+
+
+/*Footer*/
+
+.footer{
+background-color: grey;
+font-size:20px;
+font-weight: normal;
+padding-top: 30px;
+color:white;
+padding:20px;
+text-shadow: 1px 2px 10px rgba(0,0,0,0.4);
+margin-top: 35px;
+padding-bottom: 50px;
+}
+
+
+.footer h3{
+  margin-top: 0px;
+  color:#fd7b1b; 
+  font-weight: bold;
+}
+.footer span{
+  font-size:16px;
+}
+.footer h4{
+  font-size: 18;
+  margin-top: 15px;
+}
+.footer .sociais{
+  margin-top: 25px;
+  
+}
+#instagram{
+  padding-left:30px;
+  padding-right:20px;
+}
+
+.footer2{
+
+  background: #fd7b1b;
+  border-top: 1px solid white;
+  padding: 8px;
+  color:white;
+  font-size: 18px;
+  text-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+}
+
+
+.footer2 .direitos{
+  display: inline-flex;
+  padding-top: 5px;
+
+}
+
+.footer2 .autor{
+  font-size: 12px;
+}
+.instagram .instagram-preto,.facebook .facebook-preto{
+  position: absolute;
+  cursor: pointer;
+}
+.instagram .instagram-colorido, .facebook .facebook-colorido{
+  position: absolute;
+  display: none;
+  cursor: pointer;
+}
+.instagram-preto:hover + .instagram-colorido, .facebook-preto:hover+ .facebook-colorido {
+  display: block;
+}
+.instagram-colorido:hover, .facebook-colorido:hover{
+  display: block;
+}
+.facebook{
+  margin-left:15%;
+}
+
+
+
+/*FIM Footer*/
+
+.footer2 .autor #nome{
+  font-size:16px;
+}
+
+
+.main {
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+
+
+/*NavBaR*/
+.navbar{
+  background-color:rgba(0, 0, 0, 0.1);
+  padding:0;
+
+}
+.navbar-light .navbar-brand{
+  color:#fff;
+  font-size:25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link{
+  color:white;
+  text-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+  background-color:fc4506;
+  border-radius: 5px;
+
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color:#fc4506;
+  text-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+
+}
+
+.navbar-collapse{
+display:inline-flex;
+}
+
+.navbar-nav .navbar-collapse{
+  background-color: white;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+  color:white;
+
+}
+
+
+.navbar-nav li:hover {
+  background-color: #fc4506;
+  border-radius: 5px;
+}
+.navbar-nav li{
+  margin:15px;
+}
+
+
+.navbar-dark .navbar-toggler-icon{
+  background-image: url(../icon/menu3.png);
+}
+.navbar-brand{
+  padding:0px;
+}
+
+
+
+
+/*FIM NavBar*/
+
+
+/*DROPDOWN*/
+
+.dropdown-menu{
+  background-color: rgba(0, 0, 0, 0);
+  border:none;
+}
+
+.dropdown-item{
+  background-color:rgba(0, 0, 0,0);
+  color:white;
+  border-radius: 5px;
+  font-family: Century Gothic;
+  font-size:20px;
+  text-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+}
+
+
+.dropdown-item:hover{
+  background-color: orange;
+  color:white;
+}
+
+.navbar-nav .dropdown-menu{
+  background-color:#fc4506;
+  color:white;
+}
+
+
+
+/*FIM DROPDOWN*/
+
+
+.carousel-indicators li {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.carousel-inner .carousel-item p{
+margin-bottom: 25px;
+margin-top:30px;
+}
+
+
+
+
+#logo{
+  font-family: 'Ibarra Real Nova', serif;
+  font-size:25px;
+  color:#fc4506;
+  text-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+  margin-left:10px;
+  padding-left:10px;
+}
+
+
+
+/*Modalidades*/
+
+
+/*PARALLAX*/
+
+#parallax{
+  background:url(../imagem/parallax-image.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+
+}
+
+
+.parallax-texto h2{
+  color: white;
+  padding:150px 20px;
+  font-size:55px;
+  font-weight: bold;
+  letter-spacing: .6rem;
+  text-shadow: 2px 2px 5px rgba(255,255,255,0.6);
+}
+
+/*FIM   PARALLAX*/
+
+
+/*Musculacao*/
+
+.musculacao-box{
+  box-shadow: 1px 2px 20px rgba(0,0,0,0.5);
+  margin-top:50px;
+  margin-bottom: 50px;
+  padding:50px 30px 50px 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url(../imagem/modalidades/musculacao/anilhas-teste2.jpg);
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.zoom {
+	overflow: hidden;
+}
+
+.zoom {
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.zoom:hover {
+	-moz-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+
+
+
+
