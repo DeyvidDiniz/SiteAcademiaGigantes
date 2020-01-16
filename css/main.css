@@ -506,21 +506,19 @@ margin-top:30px;
 /*FIM   PARALLAX*/
 
 
-/*Musculacao*/
+/*Modalidades*/
 
-.musculacao-box{
+.modalidade-box{
   box-shadow: 1px 2px 20px rgba(0,0,0,0.5);
   margin-top:50px;
   margin-bottom: 50px;
-  padding:50px 30px 50px 0px;
+  padding:50px 30px 50px 30px;
   background-color: rgba(0, 0, 0, 0.3);
   background-image: url(../imagem/modalidades/musculacao/anilhas-teste2.jpg);
   background-repeat: no-repeat;
 }
 
-
-
-
+/*Zoom Imagem*/
 
 .zoom {
 	overflow: hidden;

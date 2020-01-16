@@ -27,7 +27,7 @@ font-weight: bold;
 }
 
 .button.primary-button::after{
-    position: absolute;
+    position:absolute;
     top:-3px;
     bottom:-3px;
     left:-3px;
@@ -76,10 +76,38 @@ font-weight: bold;
     transform: scale(1);
 }
 
+/*Titulo 2 */
+
+.text-title2{
+    font-family:Century Gothic;
+    color:grey;
+    font-size:22px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0,0.3);
+}
+
+.text-title3{
+    font-family:Century Gothic;
+    color: #f76434;
+    font-weight: bold;
+    font-size:20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0,0.3);
+}
+
+/*texto descricao*/
+
+.texto-descricao{
+    font-size: 18px;
+    margin-top:10px;
+}
 
 
 
-/*Borda*/
+
+
+
+
+
+/*Borda com logo*/
 
 .borda{
     font-family:Century Gothic;
