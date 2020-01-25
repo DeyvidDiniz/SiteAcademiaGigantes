@@ -490,9 +490,16 @@ margin-top:30px;
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
-
 }
 
+
+#parallax-planos{
+  background:url(../imagem/parallax-planos.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
 
 .parallax-texto h2{
   color: white;
@@ -539,5 +546,134 @@ margin-top:30px;
 
 
 
+/*Planos*/
+
+.plano1{
+  background-color: transparent;
+  height:600px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top:-35%;
+ 
+}
 
 
+
+
+
+ .valor{
+   color:black;
+  border-radius: 50%;
+  background-color: orangered;
+  height:200px;
+  width:200px;
+  position:relative;
+  z-index:1;
+  margin: 0 auto;
+  padding-top:8%;
+
+  /*Efeito Ring*/
+
+  border:3px solid transparent;
+
+}
+
+.valor:before{
+  content:'';
+  position: absolute;
+  top:-3px;
+  right:-3px;
+  width:200px;
+  height:200px;
+  border:3px solid transparent;
+  border-top: 4px solid black;
+  border-right: 4px solid black;
+  border-radius: 50%;
+
+  animation: animateCircle 5s linear infinite;
+}
+
+
+@keyframes animateCircle{
+  0%
+  {
+    transform:rotate(0deg);
+  }
+  100%
+  {
+    transform:rotate(360deg);
+  }
+}
+
+
+/*Panfleto 1*/
+
+
+
+.box-valor{
+  position:absolute;
+  margin-top:-80px;
+  background-image: url(../imagem/planos/panteste2.jpg);
+  height:80%;
+  margin-top: -10%;
+  margin: 0 auto;
+  width: 93%; 
+  border-radius: 10px;
+  padding-top: 27%;
+  box-shadow: 8px 8px 20px rgba(0,0,0,1);
+}
+
+
+/*Panfleto 2*/
+
+
+.panfleto2{
+  background-image: url(../imagem/planos/panfleto2.jpg);
+}
+
+/*Panfleto 3*/
+
+
+.panfleto3{
+  background-image: url(../imagem/planos/panfleto3.jpg);
+
+}
+
+
+
+.plano1 .box-valor .box-texto span{
+  font-size:18px;
+  display: inline-flex;
+  width:80%;
+  margin-left:10%;
+  color:white;
+  padding:10px;
+  text-transform: uppercase;
+}
+
+
+/*Animação Planos*/
+
+
+.valor:hover {
+
+  animation:bolinha 0.5s linear;
+  color:white;
+
+}
+
+
+@keyframes bolinha{
+  100%{
+      transform: translateY(-10px);
+  }
+  50%{
+      transform: translateY(-20px);
+  }
+  0%{
+      transform: translateY(-10px);
+  }
+}

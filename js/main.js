@@ -1,3 +1,4 @@
+
 $('.fotos').slick({
   dots: true,
   infinite: true,
@@ -43,3 +44,5 @@ $('.fotos').slick({
     // instead of a settings object
   ]
 });
+
+
